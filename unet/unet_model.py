@@ -22,14 +22,6 @@ class UNet(nn.Module):
         self.up4 = Up(128, 64, bilinear)
         self.outc = OutConv(64, n_classes)
 
-        # self.inc.requires_grad_(False)
-        # self.down1.requires_grad_(False)
-        # self.down2.requires_grad_(False)
-        # self.down3.requires_grad_(False)
-        # self.up1.requires_grad_(False)
-        # self.up2.requires_grad_(False)
-        # self.up3.requires_grad_(False)
-
     def forward(self, x):
         x1 = self.inc(x)
         x2 = self.down1(x1)
