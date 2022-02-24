@@ -16,8 +16,8 @@ from utils.dice_score import dice_loss
 from evaluate import evaluate
 from unet import UNet
 
-dir_img = Path('./drive/MyDrive/voc_data/voc_target/JPEGImages')
-dir_mask = Path('./drive/MyDrive/voc_data/voc_target/SegmentationClassPNG')
+dir_img = Path('./data/imgs/')
+dir_mask = Path('./data/masks/')
 dir_checkpoint = Path('./checkpoints/')
 
 
